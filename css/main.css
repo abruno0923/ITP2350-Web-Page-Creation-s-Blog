@@ -1,0 +1,77 @@
+/**********Pagina Web para normalizar nuestro (https://necolas.github.io/normalize.css/) 
+otra pagina (http://www.oneskyapp.com/es/docs/bootstrap/) 
+otra pagina (http://getbootstrap.com/css/)***************/
+
+
+/********** CSS Para Modificar Los Links De Nagevación ***********/
+
+/* Vamos a centralizar nuestro header y el txt en el medio , poner un backgroun en toda la pagina , Quitar padding "Margenes", El background-size cover... Se usa para auto ajustar la imagen del encabezado*/
+
+header{
+    text-align: center;
+    background: url("https://i.ytimg.com/vi/aGpxtHJHUds/maxresdefault.jpg");
+    background-size: cover;
+    color: white;
+    padding: 7px;  
+        
+}
+
+/*Para alterar la foto con el width, top, right, botton, left*/
+
+img{
+    width: 45%;
+    margin: 40px 0px 0px 0px;
+    /*para dibujar un border a la foto*/
+    border: 7px solid white;
+    border-radius: 20px;
+}
+
+
+h1{
+    font-size: 50px;
+}
+
+/*Ahora vamos a ajustar la lista con algunos selector de etiqueta, cambiar el color de la letra, crear un padding para separar el listado, etc*/
+
+
+a{
+    /*Este valor me cambiar el color de la letra del listado*/
+    color: white; 
+    /*Con este selector separamos siertos lados , El primer valor es el top, el segundo es la derecha, el tercero es Botton, y el cuarto es izquierda*/
+    padding: 0px 12px 0px 12px;
+}
+
+/*Ahora vamos a crear un selector para remover los Bullet de la lista, colocar la lista uno al lado del otro, separar con padding,*/
+
+ul{
+    background: black;
+    padding: 10px;
+}
+
+li{
+    list-style: none;
+    display: inline;
+}
+
+/*ahora vamos a modificar el selector de etiqueta article, el margen 0 le decimos que no queremos margenes... al colocar la palabra auto centraliza, le damos margenes, y cuadramos el text*/
+
+article{
+    /*width: 500px;*/
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+}
+
+
+/*Es una tecnica q permite modificar el tamaño del browser segun donde estemos... iPad, Celular, Tables, ect ect. Se llama Media Quiery*/
+
+@media (max-width:500px){
+    h1{
+        font-size: 20px;
+    }
+    
+    li{
+       display: block;
+    }
+}
